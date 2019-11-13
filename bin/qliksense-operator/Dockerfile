@@ -1,3 +1,3 @@
 FROM debian:stretch
 
-COPY qliksense-operator usr/local/bin
+COPY . usr/local/bin
