@@ -47,3 +47,7 @@ docker-push: build-docker docker-login
 
 docker-login:
 	docker login
+
+git tag: 
+	git tag $1 
+	make push
