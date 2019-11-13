@@ -35,6 +35,7 @@ endif
 
 REGISTRY ?= $(USER)
 
+build: build-client
 
 build-client: generate
 	mkdir -p $(BINDIR)
