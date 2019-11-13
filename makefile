@@ -40,7 +40,7 @@ test-unit: build
 
 
 build-docker:
-	docker build $(BINDIR) -t qlik/qliksense-operator:latest
+	docker build $(BINDIR) -t qlik/qliksense-operator:$(VERSION)
 
 docker-push: build-docker docker-login
 	docker push $(REPOSITORY)
